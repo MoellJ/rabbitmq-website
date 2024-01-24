@@ -66,7 +66,11 @@ There is a dedicated **Keycloak realm** called `Test` configured as follows:
 To start RabbitMQ run the following two commands. The first one tells RabbitMQ to pick up the
 rabbitmq.conf found under [conf/oauth2-proxy/rabbitmq.conf](https://github.com/rabbitmq/rabbitmq-oauth2-tutorial/tree/main/conf/oauth2-proxy/rabbitmq.conf)
 
+<<<<<<< HEAD:docs/oauth2-examples-proxy.md
+```plain
+=======
 <pre class="lang-bash">
+>>>>>>> Add oauth2 multi-resource and basic auth:site/oauth2-examples-oauth2-proxy.md
 export MODE=oauth2-proxy
 make start-rabbitmq
 ```
@@ -85,7 +89,11 @@ auth_oauth2.verify_aud = false
 
 To start OAuth2 Proxy, run the following command:
 
+<<<<<<< HEAD:docs/oauth2-examples-proxy.md
+```plain
+=======
 <pre class="lang-bash">
+>>>>>>> Add oauth2 multi-resource and basic auth:site/oauth2-examples-oauth2-proxy.md
 make start-oauth2-proxy
 ```
 
