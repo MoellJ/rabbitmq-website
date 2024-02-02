@@ -1,6 +1,5 @@
 ---
 title: RabbitMQ Java Client Library
-displayed_sidebar: docsSidebar
 ---
 <!--
 Copyright (c) 2005-2024 Broadcom. All Rights Reserved. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
@@ -49,7 +48,7 @@ a commercial product. Codebases that are licensed under the GPLv2 may choose GPL
 
 RabbitMQ Java client connects to RabbitMQ server nodes.
 
-You will need a running [RabbitMQ node](./download) to use with the client
+You will need a running [RabbitMQ node](/docs/download) to use with the client
 library.
 
 ### Latest Version
@@ -122,12 +121,12 @@ source.
 </table>
 
 
-See the [Signatures guide](./signatures) for details on how to verify package signatures, and the
+See the [Signatures guide](/docs/signatures) for details on how to verify package signatures, and the
 [Java client build guide](./build-java-client) for instructions on compiling from source-code.
 
 ### The Documentation
 
-Please refer to the [API guide](./api-guide).
+Please refer to the [API guide](/client-libraries/java-api-guide).
 
 The Javadoc documentation is <a href="https://rabbitmq.github.io/rabbitmq-java-client/api/current/">browsable on-line</a>, or you can
 download it for off-line use:

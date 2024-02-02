@@ -20,7 +20,7 @@ limitations under the License.
 
 # Documentation: Table of Contents
 
-This page summarises the available RabbitMQ documentation for the [latest patch release](./versions).
+This page summarises the available RabbitMQ documentation for the [latest patch release](/release-information/versions).
 
 ## Installation
 
@@ -51,8 +51,8 @@ for the original RabbitMQ protocol.
  * [Provisioning Tools](./download) (Docker image, Chef cookbook, Puppet module, etc)
  * [Package Signatures](./signatures)
  * [Supported Erlang/OTP Versions](./which-erlang)
- * [Supported RabbitMQ Versions](./versions)
- * [Changelog](./changelog)
+ * [Supported RabbitMQ Versions](/release-information/versions)
+ * [Changelog](/release-information/changelog)
  * [Snapshot (Nightly) Builds](./snapshots)
 
 #### Operating Systems and Platforms
@@ -226,17 +226,17 @@ for the original RabbitMQ protocol.
 
 ## Client Libraries and Features
 
-[RabbitMQ clients documentation](./clients) is organised in a number
+[RabbitMQ clients documentation](/client-libraries) is organised in a number
 of guides and API references. A separate set of [tutorials](/tutorials) for
 many popular programming languages are also available, as is an [AMQP 0-9-1 Overview](/tutorials/amqp-concepts).
 
 ### Client Documentation Guides
 
- * [Java Client](./api-guide)
- * [.NET Client](./dotnet-api-guide)
+ * [Java Client](/client-libraries/java-api-guide)
+ * [.NET Client](/client-libraries/dotnet-api-guide)
  * [Ruby Client](http://rubybunny.info)
- * [JMS Client](./jms-client)
- * [Erlang Client](./erlang-client-user-guide)
+ * [JMS Client](/client-libraries/jms-client)
+ * [Erlang Client](/client-libraries/erlang-client-user-guide)
  * [RabbitMQ extensions to AMQP 0-9-1](./extensions)
 
 ### Client-Driven Features
@@ -268,7 +268,7 @@ many popular programming languages are also available, as is an [AMQP 0-9-1 Over
  * [AMQP 0-9-1 URI Specification](./uri-spec)
  * [URI Query Parameters](./uri-query-parameters)
 
-See [Clients and Developer Tools](./devtools)
+See [Clients and Developer Tools](/client-libraries/devtools)
 for community client libraries.
 
 
@@ -294,7 +294,7 @@ and the [Plugins Guide](./plugins) for more information about plugins.
 
  * [RabbitMQ GitHub repositories](https://github.com/rabbitmq/)
  * [Contributor Code of Conduct](https://github.com/rabbitmq/rabbitmq-server/blob/main/CODE_OF_CONDUCT.md)
- * How to [build RabbitMQ](./build) from source, or
+ * How to [build RabbitMQ](./build-server) from source, or
  * from [GitHub](/github).
 
 

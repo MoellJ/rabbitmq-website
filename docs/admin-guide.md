@@ -34,8 +34,8 @@ see <a href="./documentation">All Documentation Guides</a>.
  * [Provisioning Tools](./download) (e.g. Chef cookbook, Puppet module, Docker image)
  * [Package Signatures](./signatures)
  * [Supported Erlang/OTP Versions](./which-erlang)
- * [Supported RabbitMQ Versions](./versions)
- * [Changelog](./changelog)
+ * [Supported RabbitMQ Versions](/release-information/versions)
+ * [Changelog](/release-information/changelog)
 
 ### Operating Systems and Platforms
 

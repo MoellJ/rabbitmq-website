@@ -115,6 +115,24 @@ const config = {
         sidebarPath: './sidebarsTutorials.js',
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'release-information',
+        path: 'release-information',
+        routeBasePath: 'release-information',
+        sidebarPath: './sidebarsReleaseInfo.js',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'client-libraries',
+        path: 'client-libraries',
+        routeBasePath: 'client-libraries',
+        sidebarPath: './sidebarsClientLibs.js',
+      },
+    ],
   ],
 
   themeConfig:
@@ -147,7 +165,7 @@ const config = {
             ],
             dropdownItemsAfter: [
               {href: 'https://v3-12.rabbitmq.com/documentation.html', label: '3.12'},
-              {to: '/docs/versions', label: 'Release information'},
+              {to: '/release-information/versions', label: 'Release information'},
               //{type: 'html', value: '<strong>Unsupported</strong>'},
             ],
           },

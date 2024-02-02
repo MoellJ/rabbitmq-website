@@ -34,7 +34,7 @@ PerfTest Documentation:
 
 ## PerfTest for Streams (RabbitMQ Stream Protocol) {#stream-load-testing}
 
-There is a separate version of [PerfTest for streams](https://github.com/rabbitmq/rabbitmq-stream-perf-test/) that uses [RabbitMQ Stream Protocol](./stream) internally.
+There is a separate version of [PerfTest for streams](https://github.com/rabbitmq/rabbitmq-stream-perf-test/) that uses [RabbitMQ Stream Protocol](/docs/stream) internally.
 
 Stream PerfTest Documentation:
 

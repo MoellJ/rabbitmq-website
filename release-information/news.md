@@ -1,6 +1,5 @@
 ---
 title: RabbitMQ Project Announcements
-displayed_sidebar: docsSidebar
 ---
 <div id="left-content">
     <p>
@@ -3808,7 +3807,7 @@ displayed_sidebar: docsSidebar
                 <li>Most recent 3.6.x version packages will continue to be available from Bintray, Package Cloud and GitHub</li>
             </ul>
             <p></p>
-            <p xmlns:doc="https://www.rabbitmq.com/namespaces/ad-hoc/doc">We encourage all 3.6.x users to <a href="./upgrade.html">upgrade</a> to <a href="./changelog.html">the latest release</a>.</p>
+            <p xmlns:doc="https://www.rabbitmq.com/namespaces/ad-hoc/doc">We encourage all 3.6.x users to <a href="/docs/upgrade.html">upgrade</a> to <a href="./changelog.html">the latest release</a>.</p>
             <p xmlns:doc="https://www.rabbitmq.com/namespaces/ad-hoc/doc">
                 We welcome any questions you may have on our
                 <a href="https://groups.google.com/forum/#!forum/rabbitmq-users">official mailing list, rabbitmq-users</a>.
@@ -4844,7 +4843,7 @@ j8ZGl+/bUPvV/SuMHp61DbfBXjbeBmnP3mycMwo6LMr+ZBqwbVJq
             <p xmlns:doc="https://www.rabbitmq.com/namespaces/ad-hoc/doc">
                 The .NET client receives many improvements leading to
                 <a href="https://groups.google.com/d/topic/rabbitmq-users/sPSP3ulG6sg/discussion">backward-incompatible changes</a>
-                to the <a href="https://www.rabbitmq.com/dotnet-api-guide.html">API</a>. In the future, NuGet will become the primary distribution method for the .NET client.
+                to the <a href="https://www.rabbitmq.com/client-libraries/dotnet-api-guide.html">API</a>. In the future, NuGet will become the primary distribution method for the .NET client.
             </p>
 
             <p xmlns:doc="https://www.rabbitmq.com/namespaces/ad-hoc/doc">

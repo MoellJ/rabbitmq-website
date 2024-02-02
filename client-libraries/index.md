@@ -30,28 +30,28 @@ import {
 
 ## Java
 
- * [Downloads and Installation](./java-client)
- * [API Guide](./api-guide)
+ * [Downloads and Installation](./java-client.md)
+ * [API Guide](./java-api-guide.md)
  * <a href={JavaClientDocURL()}>API Reference</a>
- * [JMS Guide](./jms-client)
+ * [JMS Guide](./jms-client.md)
  * [JMS Reference](https://github.com/rabbitmq/rabbitmq-jms-client/blob/main/jms-client-compliance.md)
- * [Command line tools](./java-tools)
+ * [Command line tools](./java-tools.md)
 
 
 ## .NET/C# #
 
- * [Downloads and Installation](./dotnet)
- * [API Guide](./dotnet-api-guide)
+ * [Downloads and Installation](./dotnet.md)
+ * [API Guide](./dotnet-api-guide.md)
  * <a href={DotNetClientDocURL() + '/RabbitMQ.Client.html'}>API Reference</a>
 
 ## Erlang
 
- * [Downloads and Installation](./erlang-client)
- * [API Guide](./erlang-client-user-guide)
+ * [Downloads and Installation](./erlang-client.md)
+ * [API Guide](./erlang-client-user-guide.md)
  * <a href="https://hexdocs.pm/amqp_client/" target="_blank" rel="noopener noreferrer">API Reference</a>
 
 ## Other Resources
 
-* [AMQP URI Parsing Spec](./uri-spec)
+* [AMQP URI Parsing Spec](/docs/uri-spec)
 
-See the [developer tools](./devtools) for community-contributed code.
+See the [developer tools](/client-libraries/devtools) for community-contributed code.

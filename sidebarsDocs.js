@@ -24,490 +24,572 @@ const sidebars = {
       label: 'Introduction',
     },
     {
+      type: 'link',
+      label: 'Release Information',
+      href: '/release-information'
+    },
+    {
+      type: 'link',
+      label: 'Getting Started',
+      href: '/tutorials'
+    },
+    {
+      type: 'doc',
+      id: 'download',
+      label: 'How Do I Get RabbitMQ',
+    },
+    {
       type: 'category',
-      label: 'Server Documentation',
-      link: {type: 'doc', id: 'admin-guide'},
+      label: 'Install and Upgrade',
+      link: {type: 'doc', id: 'install-and-upgrade'},
       items: [
         {
           type: 'category',
-          label: 'Configuration',
-          link: {type: 'doc', id: 'configure'},
+          label: 'Install Requirements',
+          link: {type: 'doc', id: 'install-requirements'},
           items: [
             {
               type: 'doc',
-              id: 'relocate',
-              label: 'File Locations',
-            },
-            'logging',
-            {
-              type: 'doc',
-              id: 'persistence-conf',
-              label: 'Persistence',
+              id: 'which-erlang',
+              label: 'Erlang Version Requirements',
             },
             {
               type: 'doc',
-              id: 'networking',
-              label: 'Networking',
-            },
-            {
-              type: 'doc',
-              id: 'parameters',
-              label: 'Parameters and Policies',
+              id: 'signatures',
+              label: 'Release Package Signatures',
             },
           ],
         },
-        {
-          type: 'doc',
-          id: 'management',
-          label: 'Management UI',
-        },
-        'monitoring',
-        'production-checklist',
-        {
+       {
+         type: 'category',
+         label: 'Supported Operating Systems',
+         items: [
+         {
           type: 'category',
-          label: 'TLS Support',
-          link: {type: 'doc', id: 'ssl'},
+          label: 'Linux/Unix',
           items: [
-            {
-              type: 'doc',
-              id: 'troubleshooting-ssl',
-              label: 'Troubleshooting TLS',
+                  {
+                  type: 'doc',
+                  id: 'install-debian',
+                  label: 'Debian and Ubuntu',
+                  },
+                 {
+                  type: 'doc',
+                  id: 'install-rpm',
+                  label: 'RedHat',
+                 },
+                 {
+                  type: 'doc',
+                  id: 'install-generic-unix',
+                  label: 'Generic Unix: Linux, MacOS, and BSD systems',
+                 },
+              ],
             },
             {
               type: 'doc',
-              id: 'clustering-ssl',
-              label: 'TLS for Inter-node (Clustering) Traffic',
+              id: 'install-windows',
+              label: 'Windows',
+              }, 
+              {
+                type: 'category',
+                label: 'MacOS',
+                items: [
+                        {
+                        type: 'doc',
+                        id: 'install-standalone-mac',
+                        label: 'MacOS using Standalone Binary Build',
+                        },
+                       {
+                        type: 'doc',
+                        id: 'install-homebrew',
+                        label: 'MacOs using Homebrew',
+                       },
+                    ],
+                  },
+           ],
+         },
+         {
+          type: 'category',
+          label: 'Upgrade',
+          link: {type: 'doc', id: 'upgrade'},
+          items: [
+            {
+              type: 'doc',
+              id: 'blue-green-upgrade',
+              label: ' Blue-Green Upgrade',
             },
           ],
-        },
-        'streams',
-        'feature-flags',
-        'distributed',
-        {
-          type: 'category',
-          label: 'Clustering',
-          link: {type: 'doc', id: 'clustering'},
-          items: [
-            {
-              type: 'doc',
-              id: 'cluster-formation',
-              label: 'Cluster Formation',
-            },
-            {
-              type: 'doc',
-              id: 'ha',
-              label: 'Classic Queue Mirroring',
-            },
-            {
-              type: 'doc',
-              id: 'partitions',
-              label: 'Clustering and Network Partitions',
-            },
-            {
-              type: 'doc',
-              id: 'nettick',
-              label: 'Net Tick Time',
-            },
-            {
-              type: 'doc',
-              id: 'clustering-ssl',
-              label: 'TLS for Inter-node (Clustering) Traffic',
-            },
-            {
-              type: 'link',
-              label: 'Inter-node Traffic Compression',
-              href: 'https://www.rabbitmq.com/clustering-compression.html',
-            },
-          ],
-        },
-        {
-          type: 'doc',
-          id: 'reliability',
-          label: 'Reliable Delivery',
-        },
-        {
-          type: 'category',
-          label: 'Schema Definition Export and Import',
-          link: {type: 'doc', id: 'definitions'},
-          items: [
-            {
-              type: 'link',
-              label: 'Warm standby Using Definition Replication',
-              href: 'https://www.rabbitmq.com/definitions-standby.html',
-            },
-          ],
-        },
-        'backup',
-        {
-          type: 'category',
-          label: 'Alarms',
-          link: {type: 'doc', id: 'alarms'},
-          items: [
-            'memory',
-            {
-              type: 'doc',
-              id: 'disk-alarms',
-              label: 'Disk Alarms',
-            },
-            {
-              type: 'doc',
-              id: 'memory-use',
-              label: 'Memory Use',
-            },
-            'flow-control',
-          ],
-        },
-        {
-          type: 'doc',
-          id: 'memory-use',
-          label: 'Memory Use',
-        },
-        {
-          type: 'category',
-          label: 'Networking',
-          link: {type: 'doc', id: 'networking'},
-          items: [
-            {
-              type: 'doc',
-              id: 'troubleshooting-networking',
-              label: 'Troubleshooting Networking',
-            },
-          ]
-        },
-        'vhosts',
-        {
-          type: 'doc',
-          id: 'access-control',
-          label: 'Access Control (Authorisation)',
-        },
-        'authentication',
-        {
-          type: 'doc',
-          id: 'ldap',
-          label: 'LDAP',
-        },
-        {
-          type: 'doc',
-          id: 'lazy-queues',
-          label: 'Lazy Queues',
-        },
-        {
-          type: 'doc',
-          id: 'event-exchange',
-          label: 'Internal Event Exchange',
-        },
-        {
-          type: 'doc',
-          id: 'firehose',
-          label: 'Firehose (Message Tracing)',
-        },
-        {
-          type: 'category',
-          label: 'Manual Pages',
-          link: {type: 'doc', id: 'manpages'},
-          items: [
-            {
-              type: 'doc',
-              id: 'man/rabbitmqctl.8',
-              label: 'rabbitmqctl',
-            },
-            {
-              type: 'doc',
-              id: 'man/rabbitmq-diagnostics.8',
-              label: 'rabbitmq-diagnostics',
-            },
-            {
-              type: 'doc',
-              id: 'man/rabbitmq-plugins.8',
-              label: 'rabbitmq-plugins',
-            },
-            {
-              type: 'doc',
-              id: 'man/rabbitmq-upgrade.8',
-              label: 'rabbitmq-upgrade',
-            },
-            {
-              type: 'doc',
-              id: 'man/rabbitmq-queues.8',
-              label: 'rabbitmq-queues',
-            },
-            {
-              type: 'doc',
-              id: 'man/rabbitmq-streams.8',
-              label: 'rabbitmq-streams',
-            },
-            {
-              type: 'doc',
-              id: 'man/rabbitmq-server.8',
-              label: 'rabbitmq-server',
-            },
-            {
-              type: 'doc',
-              id: 'man/rabbitmq-service.8',
-              label: 'rabbitmq-service',
-            },
-            {
-              type: 'doc',
-              id: 'man/rabbitmq-echopid.8',
-              label: 'rabbitmq-echopid',
-            },
-            {
-              type: 'doc',
-              id: 'man/rabbitmq-env.conf.5',
-              label: 'rabbitmq-env.conf',
-            },
-          ],
-        },
-        {
-          type: 'doc',
-          id: 'windows-quirks',
-          label: 'Windows Quirks',
         },
       ],
     },
     {
       type: 'category',
-      label: 'Client Documentation',
-      link: {type: 'doc', id: 'clients'},
+      label: 'How to Use RabbitMQ',
       items: [
         {
-          type: 'category',
-          label: 'Java Client Guide',
-          link: {type: 'doc', id: 'api-guide'},
-          items: [
-            {
-              type: 'doc',
-              id: 'java-tools',
-              label: 'Java Client Tools',
+          type: 'doc',
+          id: 'feature-flags',
+          label: 'Features Flags',
+        },
+        {
+          type: 'doc',
+          id: 'reliability',
+          label: 'Reliability and Data Safety',
+        },
+        {
+        type: 'category',
+        label: 'Publishing Messages',
+        items: [
+          {
+            type: 'doc',
+            id: 'e2e',
+            label: 'Exchange to Exchange Bindings',
+          },
+          {
+            type: 'doc',
+            id: 'ae',
+            label: 'Alternative Exchanges',
+          },
+          {
+            type: 'doc',
+            id: 'sender-selected',
+            label: 'Sender-selected Distribution',
+          },
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Consuming Messages',
+        items: [
+          {
+            type: 'doc',
+            id: 'consumers',
+            label: 'Describing Consumers',
+          },
+          {
+            type: 'doc',
+            id: 'consumer-cancel',
+            label: 'Consumer Cancellation Notifications',
+          },
+          {
+            type: 'doc',
+            id: 'consumer-prefetch',
+            label: 'Consumer Prefetch',
+          },
+          {
+            type: 'doc',
+            id: 'consumer-priority',
+            label: 'Consumer Priorites',
+          },
+        ],
+      },
+      {
+        type: 'doc',
+        id: 'confirms',
+        label: 'Consumer Acknowledgements and Publisher Confirms',
+      },
+      {
+        type: 'category',
+        label: 'Queues and Streams',
+        items: [
+          {
+            type: 'doc',
+            id: 'queues',
+            label: 'Queues in General',
+          },
+          {
+            type: 'doc',
+            id: 'quorum-queues',
+            label: 'Quorum Queues',
+          },
+          {
+            type: 'doc',
+            id: 'classic-queues',
+            label: 'Classic Queues',
+          },
+          {
+            type: 'doc',
+            id: 'migrate-mcq-to-qq',
+            label: 'Migrate Mirrored Classic Queues to Quorum Queues',
+          },
+          {
+            type: 'doc',
+            id: 'ttl',
+            label: 'Time-to-Live and Expiration',
+          },
+          {
+            type: 'doc',
+            id: 'maxlength',
+            label: 'Set the Queue Length',
+          },
+          {
+            type: 'doc',
+            id: 'lazy-queues',
+            label: 'Set the Queue Modes: Lazy and Default',
+          },
+          {
+            type: 'doc',
+            id: 'dlx',
+            label: 'Dead Lettering Feature',
+          },
+          {
+            type: 'doc',
+            id: 'priority',
+            label: 'Turn your Queues into Priority Queues',
+          },
+          {
+            type: 'doc',
+            id: 'streams',
+            label: 'Streams',
+          },
+        ],
+      },
+      {
+        type: 'doc',
+        id: 'channels',
+        label: 'Channels',
+      },
+      {
+        type: 'category',
+        label: 'Working with Plugins',
+        items: [
+          {
+            type: 'doc',
+            id: 'installing-plugins',
+            label: 'Installing Plugins',
+          },
+          {
+            type: 'category',
+            label: 'Management Plugin',
+            link: {type: 'doc', id: 'management'},
+            items: [
+              {
+                type: 'doc',
+                id: 'management-cli',
+                label: 'Management CLI',
+              },
+            ],
+          },
+          {
+            type: 'category',
+            label: 'Federation Plugin',
+            link: {type: 'doc', id: 'federation'},
+            items: [
+              {
+                type: 'doc',
+                id: 'federated-exchanges',
+                label: 'Federated Exchanges',
+              },
+              {
+                type: 'doc',
+                id: 'federated-queues',
+                label: 'Federated Queues',
+              },
+              {
+                type: 'doc',
+                id: 'federation-reference',
+                label: 'Federation Reference',
+              },
+            ],
+          },
+          {
+            type: 'category',
+            label: 'Shovel Plugin',
+            link: {type: 'doc', id: 'shovel'},
+            items: [
+              {
+                type: 'doc',
+                id: 'shovel-static',
+                label: 'Configuring Static Shovels',
+              },
+              {
+                type: 'doc',
+                id: 'shovel-dynamic',
+                label: 'Configuring Dynamic Shovels',
+              },
+            ],
+          }, 
+          {
+            type: 'doc',
+            id: 'stream',
+            label: 'Stream Plugin',
+          },
+          {
+            type: 'doc',
+            id: 'stomp',
+            label: 'STOMP Plugin',
+          },
+          {
+            type: 'doc',
+            id: 'web-stomp',
+            label: 'Web STOMP Plugin',
+          },
+          {
+            type: 'doc',
+            id: 'mqtt',
+            label: 'MQTT Plugin',
+          },
+          {
+            type: 'doc',
+            id: 'web-mqtt',
+            label: 'Web MQTT Plugin',
+          },
+          {
+            type: 'doc',
+            id: 'ldap',
+            label: 'LDAP Plugin',
+          },    
+        ],  
+      },
+      {
+        type: 'doc',
+        id: 'distributed',
+        label: 'Distributed RabbitMQ Feature',
+      },
+      {
+        type: 'category',
+        label: 'Protocol Extensions',
+        items: [
+          {
+          type: 'doc',
+          id: 'direct-reply-to',
+          label: 'Direct reply-to',
+              },
+              {
+                type: 'doc',
+                id: 'connection-blocked',
+                label: 'Blocked Connection Notifications',
+              },
+              {
+                type: 'doc',
+                id: 'nack',
+                label: 'Negative Acknowledgements',
+              },
+              {
+                type: 'doc',
+                id: 'e2e',
+                label: 'Exchange to Exchange Bindings',
+              },
+              {
+                type: 'doc',
+                id: 'sender-selected',
+                label: 'Sender-selected Distribution',
+              },
+            ],
+          }, 
+        ],
+      },
+  {
+    type: 'category',
+    label: 'Configuration and Administration',
+    link: {type: 'doc', id: 'configure'},
+    items: [
+        {
+        type: 'doc',
+        id: 'relocate',
+        label: 'File Directory and Locations',
+        }, 
+        {
+          type: 'doc',
+          id: 'logging',
+          label: 'Logging',
+        },
+        {
+          type: 'doc',
+          id: 'parameters',
+          label: 'Policies and Runtime Parameters',
+        },
+        {
+          type: 'doc',
+          id: 'definitions',
+          label: 'Schema Definitions',
+        },
+        {
+          type: 'doc',
+          id: 'vhosts',
+          label: 'Per Virtual Host Limits'          
+        },
+        {
+          type: 'doc',
+          id: 'user-limits',
+          label: 'Per User Resource Limits'          
+        },
+        {
+          type: 'doc',
+          id: 'runtime',
+          label: 'Runtime Tuning'          
+        },
+
+      {
+        type: 'category',
+        label: ' Authentication and Authorization',        
+        link: {type: 'doc', id: 'access-control'},
+         items: [
+          {
+           type: 'doc',
+           id: 'authentication',
+           label: 'AMQP 0-9-1 Authentication Mechanisms',
+           },
+          {
+           type: 'doc',
+           id: 'vhosts',
+           label: 'Virtual Hosts',
+          },
+          {
+           type: 'doc',
+           id: 'passwords',
+           label: 'Credentials and Passwords',
+           },
+           {
+           type: 'doc',
+           id: 'oauth2',
+           label: 'OAuth 2 Support',
+           },
+           {
+           type: 'doc',
+           id: 'oauth2-examples',
+           label: 'OAuth 2 Examples',
+           },
+           {
+           type: 'doc',
+           id: 'ldap',
+           label: 'LDAP',
+           },
+           {
+            type: 'doc',
+            id: 'validated-user-id',
+            label: 'Validated User ID',
             },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'JMS Client',
-          link: {type: 'doc', id: 'jms-client'},
-          items: [
             {
-              type: 'link',
-              label: 'JMS Client Spec Compliance',
-              href: 'https://github.com/rabbitmq/rabbitmq-jms-client/blob/main/jms-client-compliance.md',
+            type: 'doc',
+            id: 'auth-notification',
+            label: 'Authentication Failure Notifications',
             },
-          ],
-        },
-        {
-          type: 'doc',
-          id: 'dotnet-api-guide',
-          label: '.NET Client Guide',
-        },
-        {
-          type: 'doc',
-          id: 'erlang-client-user-guide',
-          label: 'Erlang Client Guide',
-        },
-        {
-          type: 'doc',
-          id: 'heartbeats',
-          label: 'Heartbeats',
-        },
-        {
-          type: 'doc',
-          id: 'uri-spec',
-          label: 'AMQP 0-9-1 URI Spec',
-        },
-      ]
+         ],
+      },
+      {
+        type: 'category',
+        label: 'Client Connections, Networking, and TLS',
+        items: [
+          {
+            type: 'doc',
+            id: 'networking',
+            label: 'Networking',
+          },
+          {
+            type: 'doc',
+            id: 'troubleshooting-networking',
+            label: 'Troubleshooting Network Connectivity',
+          },
+          {
+            type: 'doc',
+            id: 'ssl',
+            label: 'TLS Support',
+          },
+          {
+            type: 'doc',
+            id: 'clustering-ssl',
+            label: 'Using TLS for Inter-node Traffic',
+          },
+          {
+            type: 'doc',
+            id: 'troubleshooting-ssl',
+            label: 'Troubleshooting TLS Support',
+          },
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Monitoring and Auditing',
+        link: {type: 'doc', id: 'monitoring'},
+         items: [
+          {
+           type: 'doc',
+           id: 'prometheus',
+           label: 'Monitoring with Prometheus and Grafana',
+           },
+          {
+           type: 'doc',
+           id: 'management',
+           label: 'Monitoring with the Management Plugin',
+          },
+          {
+           type: 'doc',
+           id: 'event-exchange',
+           label: 'Using the Event Exchange Plugin to Monitor Events',
+           },
+           {
+           type: 'doc',
+           id: 'firehose',
+           label: 'Message Tracing',
+           },
+           {
+           type: 'doc',
+           id: 'heartbeats',
+           label: 'Detecting Dead TCP Connections with Heartbeats and TCP Keepalives',
+           },
+         ],
+      },
+      {
+        type: 'category',
+        label: 'Resource Management',
+        items: [
+             {
+             type: 'doc',
+             id: 'memory-use',
+             label: 'Analyzing how Memory is Used',
+             },
+             {
+             type: 'doc',
+             id: 'alarms',
+             label: 'Memory and Disk Alarms',
+            },
+            {
+             type: 'doc',
+             id: 'disk-alarms',
+             label: 'Free Disk Space Alarms',
+            },
+            {
+             type: 'doc',
+             id: 'flow-control',
+             label: 'Flow Control',
+            },
+         ],  
+       },
+       {
+       type: 'doc',
+       id: 'backup',
+       label: 'Backup and Restore',
+       }, 
+    ],
     },
+    {
+      type: 'link',
+      label: 'Client Libraries',
+      href: '/client-libraries'
+    },
+
     {
       type: 'category',
-      label: 'Plugins',
-      link: {type: 'doc', id: 'plugins'},
+      label: 'Troubleshooting',
+      link: {type: 'doc', id: 'troubleshooting'},
       items: [
         {
           type: 'doc',
-          id: 'management',
-          label: 'Management plugin',
-        },
-        {
-          type: 'category',
-          label: 'Federation plugin',
-          link: {type: 'doc', id: 'federation'},
-          items: [
-            {
-              type: 'doc',
-              id: 'federated-exchanges',
-              label: 'Exchanges',
-            },
-            {
-              type: 'doc',
-              id: 'federated-queues',
-              label: 'Queues',
-            },
-            {
-              type: 'doc',
-              id: 'federation-reference',
-              label: 'Reference',
-            },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Shovel plugin',
-          link: {type: 'doc', id: 'shovel'},
-          items: [
-            {
-              type: 'doc',
-              id: 'shovel-static',
-              label: 'Static Shovels',
-            },
-            {
-              type: 'doc',
-              id: 'shovel-dynamic',
-              label: 'Dynamic Shovels',
-            },
-          ],
-        },
-        'stream',
-        'stomp',
-        {
-          type: 'doc',
-          id: 'web-stomp',
-          label: 'STOMP-over-WebSockets',
-        },
-        'mqtt',
-        {
-          type: 'doc',
-          id: 'web-mqtt',
-          label: 'MQTT-over-WebSockets',
+          id: 'troubleshooting-networking',
+          label: 'Troubleshooting Network Connectivity',
         },
         {
           type: 'doc',
-          id: 'ldap',
-          label: 'LDAP',
+          id: 'troubleshooting-ssl',
+          label: 'Troubleshooting TLS',
         },
         {
           type: 'doc',
-          id: 'oauth2',
-          label: 'OAuth 2.0 plugin',
+          id: 'windows-quirks',
+          label: 'Troubleshooting the Windows Install',
         },
-        {
-          type: 'doc',
-          id: 'installing-plugins',
-          label: 'Installing Plugins',
-        },
-      ]
-    },
-    {
-      type: 'category',
-      label: 'Protocol',
-      items: [
-        {
-          type: 'doc',
-          id: 'specification',
-          label: 'Compatibility',
-        },
-        'interoperability',
-        'semantics',
-      ]
-    },
-    {
-      type: 'category',
-      label: 'Our Extensions',
-      link: {type: 'doc', id: 'extensions'},
-      items: [
-        {
-          type: 'doc',
-          id: 'confirms',
-          label: 'Confirms',
-        },
-        'consumer-cancel',
-        'consumer-prefetch',
-        'consumer-priority',
-        'direct-reply-to',
-        {
-          type: 'doc',
-          id: 'connection-blocked',
-          label: 'Blocked Connections',
-        },
-        {
-          type: 'doc',
-          id: 'nack',
-          label: 'basic.nack',
-        },
-        {
-          type: 'doc',
-          id: 'e2e',
-          label: 'e2e Bindings',
-        },
-        {
-          type: 'doc',
-          id: 'ae',
-          label: 'Alternate Exchanges',
-        },
-        {
-          type: 'doc',
-          id: 'sender-selected',
-          label: 'Sender Routing',
-        },
-        {
-          type: 'doc',
-          id: 'ttl',
-          label: 'TTL',
-        },
-        {
-          type: 'doc',
-          id: 'dlx',
-          label: 'Dead Lettering',
-        },
-        {
-          type: 'doc',
-          id: 'maxlength',
-          label: 'Length Limit',
-        },
-        {
-          type: 'doc',
-          id: 'priority',
-          label: 'Priority Queues',
-        },
-        'validated-user-id',
-        {
-          type: 'doc',
-          id: 'auth-notification',
-          label: 'Auth Failure',
-        },
-        'spec-differences',
-      ]
-    },
-    {
-      type: 'category',
-      label: 'Building',
-      link: {type: 'doc', id: 'build'},
-      items: [
-        {
-          type: 'doc',
-          id: 'build-server',
-          label: 'Build the Server',
-        },
-        {
-          type: 'doc',
-          id: 'build-java-client',
-          label: 'Build the Java Client',
-        },
-        {
-          type: 'doc',
-          id: 'build-dotnet-client',
-          label: 'Build the .NET Client',
-        },
-        {
-          type: 'doc',
-          id: 'build-erlang-client',
-          label: 'Build the Erlang Client',
-        },
-      ]
-    },
-    'previous',
-    {
-      type: 'doc',
-      id: 'mpl',
-      label: 'License',
+      ],
     },
   ],
 };

@@ -1,6 +1,5 @@
 ---
 title: Release Series
-displayed_sidebar: docsSidebar
 ---
 <!--
 Copyright (c) 2005-2024 Broadcom. All Rights Reserved. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
@@ -33,8 +32,8 @@ This guide explains what release series of RabbitMQ are currently covered by
 community or extended commercial support policies, which release series is coming next, and
 what series are no longer supported.
 
-For guidance on upgrades, see the [Upgrade](./upgrade) and
-[Blue/Green Deployment Upgrade](./blue-green-upgrade) guides.
+For guidance on upgrades, see the [Upgrade](/docs/upgrade) and
+[Blue/Green Deployment Upgrade](/docs/blue-green-upgrade) guides.
 
 ## {`Currently Supported ${RabbitMQServerProductName()} Release Series`} {#currently-supported}
 

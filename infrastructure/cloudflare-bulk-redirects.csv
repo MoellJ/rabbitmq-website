@@ -160,7 +160,7 @@ www.rabbitmq.com/amqp-0-9-1-errata.html,https://www.rabbitmq.com/docs/amqp-0-9-1
 www.rabbitmq.com/amqp-0-9-1-quickref.html,https://www.rabbitmq.com/docs/amqp-0-9-1-quickref,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/amqp-0-9-1-reference.html,https://www.rabbitmq.com/docs/amqp-0-9-1-reference,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/amqp-wireshark.html,https://www.rabbitmq.com/docs/amqp-wireshark,,TRUE,FALSE,FALSE,FALSE
-www.rabbitmq.com/api-guide.html,https://www.rabbitmq.com/docs/api-guide,,TRUE,FALSE,FALSE,FALSE
+www.rabbitmq.com/api-guide.html,https://www.rabbitmq.com/client-libraries/java-api-guide,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/auth-notification.html,https://www.rabbitmq.com/docs/auth-notification,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/authentication.html,https://www.rabbitmq.com/docs/authentication,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/backup.html,https://www.rabbitmq.com/docs/backup,,TRUE,FALSE,FALSE,FALSE
@@ -197,7 +197,7 @@ www.rabbitmq.com/disk-alarms.html,https://www.rabbitmq.com/docs/disk-alarms,,TRU
 www.rabbitmq.com/distributed.html,https://www.rabbitmq.com/docs/distributed,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/dlx.html,https://www.rabbitmq.com/docs/dlx,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/documentation.html,https://www.rabbitmq.com/docs/documentation,,TRUE,FALSE,FALSE,FALSE
-www.rabbitmq.com/dotnet-api-guide.html,https://www.rabbitmq.com/docs/dotnet-api-guide,,TRUE,FALSE,FALSE,FALSE
+www.rabbitmq.com/dotnet-api-guide.html,https://www.rabbitmq.com/client-libraries/dotnet-api-guide,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/dotnet.html,https://www.rabbitmq.com/docs/dotnet,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/download.html,https://www.rabbitmq.com/docs/download,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/e2e.html,https://www.rabbitmq.com/docs/e2e,,TRUE,FALSE,FALSE,FALSE
