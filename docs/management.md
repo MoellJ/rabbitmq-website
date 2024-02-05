@@ -354,7 +354,7 @@ management.oauth_client_secret = rabbit_user_client
 management.oauth_scopes = openid profile rabbitmq.*
 </pre>
 
-### <a id="allow-basic-auth-for-http-api" class="anchor" href="#allow-basic-auth-for-http-api">Allow Basic and OAuth 2 authentication for Management HTTP API</a>
+### Allow Basic and OAuth 2 authentication for Management HTTP API {#allow-basic-auth-for-http-api}
 
 When using `management.oauth_enabled = true`, it is still possible to authenticate
 with [HTTP basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)
@@ -424,7 +424,7 @@ The second scenario is when the management UI session exceeds the maximum allowe
 
 ### <a id="csp-header" class="anchor" href="#csp-header">Special attention to CSP header `connect-src`</a>
 
-To support the OAuth 2.0 protocol, RabbitMQ makes asynchronous REST calls to the [OpenId Connect Discovery endpoint](#configure-openid-connect-discovery-endpoint). If you override the default [CSP headers](#csp), you have to make sure that the `connect-src` CSP directive whitelists the [OpenId Connect Discovery endpoint](#configure-openid-connect-discovery-endpoint).
+To support the OAuth 2.0 protocol, RabbitMQ makes asynchronous REST calls to the [OpenId Connect Discovery endpoint](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationRequest). If you override the default [CSP headers](#csp), you have to make sure that the `connect-src` CSP directive whitelists the [OpenId Connect Discovery endpoint](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationRequest).
 
 For instance, if you configured the CSP header with the value `default-src 'self'`, you are, by default, setting `connect-src 'self'` which means you are denying RabbitMQ access to any external endpoint; hence disabling OAuth 2.0.
 

@@ -27,8 +27,8 @@ This [RabbitMQ authentication/authorisation backend](./access-control) plugin le
 This guide covers
 
  * [How it works](#how-it-works)
-    * [Authorization Workflow](#authorization-workflow)
     * [Prerequisites](#prerequisites)
+    * [Authorization Flow](#authorization-flow)
     * [Variables Configurable in rabbitmq.conf](#variables-configurable)
     * [Token validation](#token-validation)
     * [Token Expiration and Refresh](#token-expiration)
@@ -79,7 +79,7 @@ To use this plugin, all RabbitMQ nodes must be
 2. configured with the resource service ID (`resource_server_id`). The RabbitMQ cluster becomes an OAuth 2.0 resource and this is its identifier.
 3. configured with issuer URL of the OAuth 2.0 provider or the JWKS URL or directly with the signing keys the OAuth 2.0 provider will use to sign tokens
 
-Here is the minimal configuration to support OAuth 2.0 authentication (*Note*: To enable it in the management plugin you need additional configuration):
+Here is the minimal configuration to support OAuth 2.0 authentication (*Note*: To enable it in the management plugin you need [additional configuration](./management.html#basic-configuration)):
 
 <pre class="lang-ini">
 auth_oauth2.resource_server_id = new_resource_server_id
@@ -92,7 +92,7 @@ Based on the above configuration, JWT Tokens presented to RabbitMQ for authentic
 2. have a value in the `aud` field that matches `resource_server_id` value
 3. scopes must match the `resource_server_id` value , e.g. `new_resource_server_id.read:*/*`
 
-And the `https://my-oauth2-provider.com/realm/rabbitmq/`*.well-known/openid-configuration* must return the OpenID Provider Configuration which includes the JKWS url to download the signing keys (*Note*: *.well-known/openid-configuration* is the OpenID standard path for the OpenID Provider Configuration endpoint).
+And the `https://my-oauth2-provider.com/realm/rabbitmq/`*.well-known/openid-configuration* endpoint must return the OpenID Provider Configuration which includes the JKWS url to download the signing keys (*Note*: *.well-known/openid-configuration* is the OpenID standard path for the OpenID Provider Configuration endpoint).
 
 The next sections cover in more detail what happens during authentication and how to configure OAuth 2.0 beyond the basic configuration shown above.
 
@@ -113,14 +113,14 @@ The token can be any [JWT token](https://jwt.io/introduction/) which contains th
 2. Token **scope** returned by OAuth 2.0 provider must include RabbitMQ resource scopes that follow a convention used by this plugin: `configure:%2F/foo` means "configure permissions for 'foo' in vhost '/'") (`scope` field can be changed using `extra_scopes_source` in **advanced.config** file.
 3. Client passes the token as password when connecting to a RabbitMQ node. **The username field is ignored**.
 4. RabbitMQ validates the token's signature. To do so it must have the signing keys or download them from the JWKS endpoint as explained in earlier sections
-5. RabbitMQ validates the token has the **audience** matching the `resource_server_id`
+5. RabbitMQ validates the token has the **audience** claim and whose value matches the `resource_server_id`
 6. RabbitMQ translates the scopes found in the token into RabbitMQ permissions (same permissions used in the RabbitMQ's internal database)
 
 ### Variables Configurable in rabbitmq.conf {#variables-configurable}
 
 | Key                                        | Documentation
 |--------------------------------------------|-----------
-| `auth_oauth2.resource_server_id`           | [The Resource Server ID](#resource-server-id-and-scope-prefixes)
+| `auth_oauth2.resource_server_id`           | [The Resource Server ID](#resource-server-id)
 | `auth_oauth2.resource_server_type`         | [The Resource Server Type](#rich-authorization-request)
 | `auth_oauth2.additional_scopes_key`        | Configure the plugin to also look in other fields (maps to `additional_rabbitmq_scopes` in the old format). |
 | `auth_oauth2.scope_prefix`                 | Configure prefix for all scopes. Default value is  `auth_oauth2.resource_server_id` followed by the dot `.` character. |
