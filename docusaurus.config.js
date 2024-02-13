@@ -127,9 +127,9 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'integrate-with-client-libraries',
-        path: 'integrate-with-client-libraries',
-        routeBasePath: 'integrate-with-client-libraries',
+        id: 'client-libraries',
+        path: 'client-libraries',
+        routeBasePath: 'client-libraries',
         sidebarPath: './sidebarsIntegClientLib.js',
       },
     ],
