@@ -75,11 +75,11 @@ Next, let's take a look at the workflows the OAuth 2 plugin supports.
 
 To use this plugin, all RabbitMQ nodes must be
 
-1. [configured to use the rabbit_auth_backend_oauth2 backend](./access-control.html).
+1. [configured to use the rabbit_auth_backend_oauth2 backend](./access-control).
 2. configured with the resource service ID (`resource_server_id`). The RabbitMQ cluster becomes an OAuth 2.0 resource and this is its identifier.
 3. configured with issuer URL of the OAuth 2.0 provider or the JWKS URL or directly with the signing keys the OAuth 2.0 provider will use to sign tokens
 
-Here is the minimal configuration to support OAuth 2.0 authentication (*Note*: To enable it in the management plugin you need [additional configuration](./management.html#basic-configuration)):
+Here is the minimal configuration to support OAuth 2.0 authentication (*Note*: To enable it in the management plugin you need [additional configuration](./management#basic-configuration)):
 
 <pre class="lang-ini">
 auth_oauth2.resource_server_id = new_resource_server_id
@@ -248,8 +248,8 @@ The `aud` ([Audience](https://tools.ietf.org/html/rfc7519#page-9)) identifies th
 
 ### Token Expiration and Refresh {#token-expiration}
 
-On an existing connection the token can be refreshed by the [update-secret](./amqp-0-9-1-reference.html#connection.update-secret) AMQP 0.9.1 method.
-Please check your client whether it supports this method (e.g. documentation for the [Java client](./api-guide.html#oauth2-refreshing-token)).
+On an existing connection the token can be refreshed by the [update-secret](./amqp-0-9-1-reference#connection.update-secret) AMQP 0.9.1 method.
+Please check your client whether it supports this method (e.g. documentation for the [Java client](./api-guide#oauth2-refreshing-token)).
 Otherwise the client has to disconnect and reconnect to use a new token.
 
 If the latest token expires on an existing connection, after a limited time the broker will refuse all operations (but it won't disconnect).
@@ -334,8 +334,8 @@ a write permission on all exchanges starting with `x-prod-`, and any routing key
 
 ### Scope and Tags {#scope-and-tags}
 
-Users in RabbitMQ can have [tags associated with them](./access-control.html#user-tags).
-Tags are used to [control access to the management plugin](./management.html#permissions).
+Users in RabbitMQ can have [tags associated with them](./access-control#user-tags).
+Tags are used to [control access to the management plugin](./management#permissions).
 
 In the OAuth context, tags can be added as part of the scope, using a format like `&lt;resource_server_id>.tag:&lt;tag>`. For example, if `resource_server_id` is "my_rabbit", a scope to grant access to the management plugin with
 the `monitoring` tag will be `my_rabbit.tag:monitoring`.
@@ -443,7 +443,7 @@ VwIDAQAB
       HCkEBMPxKwXuEhdnK98EMAnxdalbuHgFTVX8X8v7hLxt0O8dNOT903CvkHGICcWr95YnLUouXcli4BkAL5JJ1oraUSvClS8qRI-Vino-ghfJ6t9LrZ9eRUINCZB6Ks8Igqqnnp_BiD7XiO1c
 ```
 
-it will translate into the following configuration (in the [advanced RabbitMQ config format](https://www.rabbitmq.com/configure.html)):
+it will translate into the following configuration (in the [advanced RabbitMQ config format](./configure)):
 
 ```erlang
 [
@@ -725,7 +725,7 @@ All resource servers share the settings you have set so far under `auth_oauth2.`
 
 The list of supported resource servers is the combination of `auth_oauth2.resource_servers` and `auth_oauth2.resource_server_id`. You can use both or only one of them.
 
-**NOTE**: There is an [example](./oauth2-examples-multiresource.html) that demonstrate multiple OAuth 2 resources.
+**NOTE**: There is an [example](./oauth2-examples-multiresource) that demonstrate multiple OAuth 2 resources.
 
 ### Multiple OAuth Providers {#multiple-oauth-providers}
 

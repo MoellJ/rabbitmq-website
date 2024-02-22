@@ -47,7 +47,7 @@ This guide covers:
  * [Reverse proxy (Nginx or Apache)](#http-api-proxy) in front of the HTTP API
  * How to [enable HTTPS for management UI](#single-listener-https) and its underlying API
  * How this plugin [operates in multi-node clusters](#clustering)
- * How to [disable metric collection](#disable-stats) to use [Prometheus](prometheus.html) exclusively for monitoring
+ * How to [disable metric collection](#disable-stats) to use [Prometheus](./prometheus) exclusively for monitoring
  * [OAuth 2](#oauth2-authentication) support:
     * [Basic Configuration](#basic-configuration)
     * [Configure client secret](#configure-client-secret)
@@ -307,11 +307,12 @@ not automatically redirect users to authenticate against the OAuth 2 server, thi
 * [Auth0](https://auth0.com/)
 * [Azure](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/auth-oauth2)
 * [OAuth2 Proxy](https://oauth2-proxy.github.io/oauth2-proxy/)
+* [Okta](https://www.okta.com)
 
 
 ### <a id="basic-configuration" href="#basic-configuration">Basic configuration</a>
 
-Given the following configuration of the <a href="oauth2.html">OAuth 2.0 plugin</a>:
+Given the following configuration of the [OAuth 2.0 plugin](./oauth2):
 
 ```ini
 auth_oauth2.resource_server_id = new_resource_server_id
@@ -453,7 +454,7 @@ With `sp_initiated` logon types, there is no need to configure the `oauth_provid
 
 RabbitMQ 3.13 introduced support for multiple OAuth 2.0 resources in the OAuth 2.0 plugin and in the Management plugin.
 
-Once you have configured the [OAuth 2.0 plugin](oauth2.html#multiple-resource-servers) with all the required OAuth 2.0 resources, they are automatically supported by the management UI.
+Once you have configured the [OAuth 2.0 plugin](./oauth2#multiple-resource-servers) with all the required OAuth 2.0 resources, they are automatically supported by the management UI.
 
 Given the following OAuth 2.0 plugin configuration which consists of four OAuth 2.0 resources:
 ```ini

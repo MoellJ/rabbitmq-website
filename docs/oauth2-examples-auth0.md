@@ -1,5 +1,5 @@
 ---
-title: Use https://auth0.com/ as OAuth 2.0 server
+title: Use https://auth0.com/ as Auth 2.0 server
 displayed_sidebar: docsSidebar
 ---
 <!--

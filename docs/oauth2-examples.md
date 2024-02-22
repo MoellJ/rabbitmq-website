@@ -25,7 +25,7 @@ limitations under the License.
 
 This tutorial-style guide has two primary goals:
 
-1. Explore how applications and end users can [authenticate](./access-control.html) with RabbitMQ server using OAuth 2.0 protocol rather than the traditional username/password pairs or x.509 certificates.
+1. Explore how applications and end users can [authenticate](./access-control) with RabbitMQ server using OAuth 2.0 protocol rather than the traditional username/password pairs or x.509 certificates.
 2. Explore what it takes to set up RabbitMQ Server with OAuth 2.0 authentication mechanism across several authorization servers.
 
 The guide is
@@ -57,7 +57,7 @@ accompanied by [a public GitHub repository](https://github.com/rabbitmq/rabbitmq
 	- [KeyCloak](./oauth2-examples-keycloak)
 	- [Auth0](./oauth2-examples-auth0)
 	- [Azure Active Directory](./oauth2-examples-azure)  
-    - [OAuth2 Proxy](./oauth2-examples-oauth2-proxy)
+    - [OAuth2 Proxy](./oauth2-examples-proxy)
     - [Okta](./oauth2-examples-okta)
     - [Google](./oauth2-examples-google)  **NOT SUPPORTED**
     - [Multiple OAuth 2.0 servers and/or audiences](./oauth2-examples-multiresource)
@@ -75,7 +75,7 @@ accompanied by [a public GitHub repository](https://github.com/rabbitmq/rabbitmq
 
 To demonstrate OAuth 2.0 you need, at least, an OAuth 2.0 authorization server and RabbitMQ appropriately configured for the chosen authorization server. This guide uses [UAA](https://docs.cloudfoundry.org/concepts/architecture/uaa.html) as authorization server to demonstrate basic and advanced configuration to access to the Management UI and various messaging protocols.
 
-This guide also demonstrates how to configure RabbitMQ to use other authorization servers besides [UAA](https://docs.cloudfoundry.org/concepts/architecture/uaa.html) such as [KeyCloak](oauth2-examples-keycloak.html). The table of content of this guide has the full list of authorization servers.
+This guide also demonstrates how to configure RabbitMQ to use other authorization servers besides [UAA](https://docs.cloudfoundry.org/concepts/architecture/uaa.html) such as [KeyCloak](./oauth2-examples-keycloak). The table of content of this guide has the full list of authorization servers.
 
 Run the following two commands to start UAA and RabbitMQ configured for UAA:
 
@@ -780,4 +780,4 @@ docker logs producer_with_roles -f
 ```
 
 
-For more information on this new capability check out the [OAuth 2 guide](./oauth2.html#rich-authorization-request).
+For more information on this new capability check out the [OAuth 2 guide](./oauth2#rich-authorization-request).
