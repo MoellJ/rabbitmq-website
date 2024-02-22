@@ -586,7 +586,7 @@ zero or many locations.
 
 A location consists of a list of key-value pairs separated by forward slash `/` character. Here is the format:
 ```bash
-cluster:&lt;resource_server_id_pattern>[/vhost:&lt;vhost_pattern>][/queue:&lt;queue_name_pattern>|/exchange:&lt;exchange_name_pattern][/routing-key:&lt;routing_key_pattern>]
+cluster:<resource_server_id_pattern>[/vhost:<vhost_pattern>][/queue:<queue_name_pattern>|/exchange:<exchange_name_pattern>][/routing-key:<routing_key_pattern>]
 ```
 
 Any string separated by `/` which does not conform to `&lt;key>:&lt;value>` is ignored. For instance, if your locations start with a prefix, e.g. `vrn/cluster:rabbitmq`, the `vrn` pattern part is ignored.
@@ -660,7 +660,7 @@ In the following RAR example
 }
 ```
 
-if RabbitMQ node's `resource_server_id` is equal to `finance`, the plugin will compute the following sets of scopes:
+if RabbitMQ nodes `resource_server_id` is equal to `finance`, the plugin will compute the following sets of scopes:
 
 - `finance.read:primary-*/*/*`
 - `finance.write:primary-*/*/*`
