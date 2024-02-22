@@ -54,13 +54,13 @@ accompanied by [a public GitHub repository](https://github.com/rabbitmq/rabbitmq
     - [Preferred username claims](#preferred-username-claims)
 	- [Use Rich Authorization Requests tokens](#use-rar-tokens)
 * Use different OAuth 2.0 servers
-	- [KeyCloak](oauth2-examples-keycloak.html)
-	- [Auth0](oauth2-examples-auth0.html)
-	- [Azure Active Directory](oauth2-examples-azure.html)  
-    - [OAuth2 Proxy](./oauth2-examples-oauth2-proxy.html)
-    - [Okta](./oauth2-examples-okta.html)
-    - [Google](./oauth2-examples-google.html)  **NOT SUPPORTED**
-    - [Multiple OAuth 2.0 servers and/or audiences](./oauth2-examples-multiresource.html)
+	- [KeyCloak](./oauth2-examples-keycloak)
+	- [Auth0](./oauth2-examples-auth0)
+	- [Azure Active Directory](./oauth2-examples-azure)  
+    - [OAuth2 Proxy](./oauth2-examples-oauth2-proxy)
+    - [Okta](./oauth2-examples-okta)
+    - [Google](./oauth2-examples-google)  **NOT SUPPORTED**
+    - [Multiple OAuth 2.0 servers and/or audiences](./oauth2-examples-multiresource)
 
 <!-- /TOC -->
 
@@ -414,12 +414,12 @@ To publish to a **Topic Exchange**, you need to have the following scope:
 
 OAuth 2.0 authorisation backend supports variable expansion when checking permission on topics. It supports any JWT claim whose value is a plain string and the `vhost` variable. For example, if a user has connected with the token below against the vhost `prod`, they should have write permission to send to any exchange starting with `x-prod-` and any routing key starting with `u-bob-`:
 
-<pre class="json">
+```json
 {
   "sub" : "bob",
   "scope" : [ "rabbitmq.write:*/q-{vhost}-*/u-{sub}-*" ]
 }
-</pre>
+```
 
 ## Use advanced OAuth 2.0 configuration {#advanced-configuration}
 
