@@ -96,7 +96,7 @@ And the `https://my-oauth2-provider.com/realm/rabbitmq/`*.well-known/openid-conf
 
 The next sections cover in more detail what happens during authentication and how to configure OAuth 2.0 beyond the basic configuration shown above.
 
-### Authorization Flow {#authorization-flow-with-scopes}
+### Authorization Flow {#authorization-flow}
 
 This plugin does not communicate with any OAuth 2.0 provider in order to authenticate user and grants access. Instead, it decodes an access token provided by the client and authorises a user based on the scopes found in the token.
 
@@ -341,7 +341,6 @@ In the OAuth context, tags can be added as part of the scope, using a format lik
 the `monitoring` tag will be `my_rabbit.tag:monitoring`.
 
 ## Basic usage {#basic-usage}
-
 
 ### Configure OAuth 2.0 provider's issuer {#configure-issuer}
 
