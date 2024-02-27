@@ -81,10 +81,10 @@ To use this plugin, all RabbitMQ nodes must be
 
 Here is the minimal configuration to support OAuth 2.0 authentication (*Note*: To enable it in the management plugin you need [additional configuration](./management#basic-configuration)):
 
-<pre class="lang-ini">
+```ini
 auth_oauth2.resource_server_id = new_resource_server_id
 auth_oauth2.issuer = https://my-oauth2-provider.com/realm/rabbitmq
-</pre>
+```
 
 Based on the above configuration, JWT Tokens presented to RabbitMQ for authentication must:
 
@@ -202,6 +202,7 @@ Each `auth_oauth2.oauth_providers.<id/index>.` entry has the following settings:
 
 
 Here is an example which configures two resources (`prod` and `dev`) where each resource is managed by two distinct Identity Provider:
+
 ```ini
 auth_oauth2.scope_prefix = rabbitmq.
 auth_oauth2.resource_servers.1.id = prod
