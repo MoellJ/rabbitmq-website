@@ -132,7 +132,7 @@ The token can be any [JWT token](https://jwt.io/introduction/) which contains th
 | `auth_oauth2.token_endpoint`               | The URL of the OAuth 2.0 Token Endpoint.
 | `auth_oauth2.https.cacertfile`             | Path to a file containing PEM-encoded CA certificates. The CA certificates are used during key server [peer verification](https://rabbitmq.com/ssl.html#peer-verification).
 | `auth_oauth2.https.depth`                  | The maximum number of non-self-issued intermediate certificates that may follow the peer certificate in a valid [certification path](https://rabbitmq.com/ssl.html#peer-verification-depth). Default is 10.
-| `auth_oauth2.https.peer_verification`      | Should [peer verification](https://rabbitmq.com/ssl.html#peer-verification) be enabled. Available values: `verify_none`, `verify_peer`. Default is `verify_none`. It is recommended to configure `verify_peer`. Peer verification requires a certain amount of setup and is more secure.
+| `auth_oauth2.https.peer_verification`      | Should [peer verification](https://rabbitmq.com/ssl.html#peer-verification) be enabled. Available values: `verify_none`, `verify_peer`. Default is `verify_peer` if there are trusted CA installed in the OS or `auth_oauth2.https.cacertfile` is set
 | `auth_oauth2.https.fail_if_no_peer_cert`   | Used together with `auth_oauth2.https.peer_verification = verify_peer`. When set to `true`, TLS connection will be rejected if client fails to provide a certificate. Default is `false`.
 | `auth_oauth2.https.hostname_verification`  | Enable wildcard-aware hostname verification for key server. Available values: `wildcard`, `none`. Default is `none`.
 | `auth_oauth2.algorithms`                   | Restrict [the usable algorithms](https://github.com/potatosalad/erlang-jose#algorithm-support).
@@ -408,6 +408,8 @@ or
 ].
 ```
 
+**VERY IMPORTANT**: Since RabbitMQ 3.13, if `auth_oauth2.https.peer_verification` setting is not set, RabbitMQ sets it to `verify_peer` as long as there are trusted certificates installed in the OS or the user configured `auth_oauth2.https.cacertfile`. Because it is very common to have trusted certificates installed in the OS, effectively, RabbitMQ will always enforce certificate validation of the OAuth Provider, unless you
+set `auth_oauth2.https.peer_verification` to `verify_none`.
 
 ### Configure Signing Keys {#configure-signing-keys}
 
