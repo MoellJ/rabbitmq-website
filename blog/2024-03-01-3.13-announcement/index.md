@@ -1,5 +1,5 @@
 ---
-title: "RabbitMQ 3.13 Is Here!"
+title: "RabbitMQ 3.13.0 Is Here!"
 categories: ["Announcements"]
 authors: [kura]
 ---
@@ -13,7 +13,7 @@ Read dedicated blog posts for more details about these changes:
 * [support for stream filtering](/blog/2023/10/16/stream-filtering)
 * [performance improvements](/blog/2024/01/11/3.13-release)
 
-RabbitMQ 3.13 is the final release in the 3.x series. The next release will be 4.0!
+RabbitMQ 3.13 is the final minor release in the 3.x series. The next release will be 4.0!
 
 <!-- truncate -->
 ## Experimental Support For Khepri (Mnesia Replacement)
@@ -30,9 +30,10 @@ and therefore the semantics of what to do when a partition occurs are well defin
 :::warning
 The command below enables an experimental feature that cannot be disabled. Do not use in production!
 
-To enable Khepri, run `rabbitmqctl enable_feature_flag khepri_db` (**experimental and non-reversible!**).
-Additionally, set `cluster_partition_handling = ignore` in your configuration file to disable the old
-partition handling mechanism.
+To enable Khepri (**experimental in 3.13 and non-reversible!**) run:
+```
+rabbitmqctl enable_feature_flag khepri_db
+```
 :::
 
 You shouldn't really notice any difference after enabling Khepri. The main difference is what happens
@@ -43,8 +44,8 @@ and connected) and so on. Please report any issues you run into.
 
 ## Feature Flags
 
-RabbitMQ 3.13 includes a few new feature flags. It doesn't however, set any older flags as mandatory
-(apart from those that were already mandatory in 3.12 of course). Therefore, if you have some feature flags
+RabbitMQ 3.13.0 includes a few new feature flags. It doesn't however, set any older flags as required
+(apart from those that were already required in 3.12 of course). Therefore, if you have some feature flags
 disabled, upgrading from 3.12 to 3.13 will still work. In the 3.11 -> 3.12 upgrade, some users ran into
 issues if not all feature flags were enabled. Such issues won't happen when moving from 3.12 to 3.13.
 
