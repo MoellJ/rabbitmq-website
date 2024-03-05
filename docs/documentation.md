@@ -70,7 +70,7 @@ For an administrator who want to use RabbitMQ in a production environment, the f
     <td class="centre">XXX</td>
   </tr>
   <tr>
-    <td class="centre">Configure consumers for consuming messages and producers for publishing these messages</td>
+    <td class="centre">Configure publishers and consumers</td>
     <td class="centre">XXX</td>
   </tr>
    <tr>
