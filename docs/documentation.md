@@ -19,24 +19,66 @@ limitations under the License.
 -->
 # RabbitMQ Documentation
 
-RabbitMQ is one of the most popular open source messaging and streaming brokers in the world today. It is easy to deploy on cloud environments, on-premises, and on your local machine. It is used by millions.
+Welcome to RabbitMQ documentation. Use the drop-down menu on the top right of any page to select the documentation version for the RabbitMQ release that you want. We update each version of documentation with the latest minor and patch information for that release.
 
-## RabbitMQ Documentation is now versioned
+For previous 3.12.x documentation, select the **3.12** option from the drop-down menu. 3.12.x documentation is hosted on our previous RabbitMQ site. This documentation is not versioned. 
 
-Welcome to the RabbitMQ documentation, which is now versioned. Use the drop-down menu at the top of each page to move between the documentation versions for each RabbitMQ release. This drop down option defaults to the the latest RabbitMQ release, which is currently 3.13. 
+Use the navigation on the left to browse through documentation for your release of RabbitMQ.
+
+## The Personas that Use RabbitMQ
+
+RabbitMQ as a message and streaming broker is used in many different environments and by many different personas. The following are some of the personas currently using RabbitMQ 
+
+### Administrator
+
+For an administrator who wants to install RabbitMQ in a production environment, the following is the generic list of tasks they would follow to start using RabbitMQ.
+
+<table id="administrator">
+  <!-- headers -->
+
+  <tr>
+    <th class="centre">Tasks</th>
+    <th class="centre">Documentation Reference</th>
+  </tr>
+
+  <!-- releases -->
+
+  <tr>
+    <td class="centre">A</td>
+    <td class="centre">XXX</td>
+  </tr>
+
+  <tr>
+    <td class="centre">3.12.13</td>
+    <td class="centre">February 16 2024</td>
+    <td>
+      <ul>
+        <li>Bug fixes</li>
+      </ul>
+    </td>
+    <td class="centre">
+      <a href="https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.12.13">Release notes</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="centre">3.12.12</td>
+    <td class="centre">January 9 2024</td>
+    <td>
+      <ul>
+        <li>Bug fixes</li>
+      </ul>
+    </td>
+    <td class="centre">
+      <a href="https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.12.12">Release notes</a>
+    </td>
+  </tr>
 
 
-If the drop-down menu displays **3.13**, you are viewing documentation for all versions (including patch versions: 3.13.x) of the 3.13 release. 
 
-Select the **3.12** option from the drop-down menu to access documentation for previous 3.12.x releases. 3.12.x documentation is hosted on our previous RabbitMQ site. This documentation is not versioned. 
+### Developer
 
-Over time, versioned documentation will be included on this site for a few of the most recent RabbitMQ releases. For now, because this new website is only recently launched, it just includes versioned documentation for the latest RabbitMQ release.
-
-## A New Table of Contents
-
-Access the table of contents on the left to navigate around documentation easier. You can also use the search function to find the information you need.
-
-Soon we will be revising the table of contents that you see now and also adding some navigational topics to help you move around the documentation even faster in the future. We will keep you posted!
+For a developer who wants to use RabbitMQ in an application, the following is the generic list of steps of they would follow to start using RabbitMQ.
 
 ## Getting Started 
 
