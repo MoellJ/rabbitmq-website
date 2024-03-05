@@ -23,7 +23,8 @@ RabbitMQ is one of the most popular open source messaging and streaming brokers 
 
 ## RabbitMQ Documentation is now versioned
 
-Welcome to the RabbitMQ documentation, which is now versioned. Use the drop-down menu at the top of each page to move between the documentation versions for each RabbitMQ release. By default, this drop-down menu displays documentation for the latest RabbitMQ release, which is currently 3.13. 
+Welcome to the RabbitMQ documentation, which is now versioned. Use the drop-down menu at the top of each page to move between the documentation versions for each RabbitMQ release. This drop down option defaults to the the latest RabbitMQ release, which is currently 3.13. 
+
 
 If the drop-down menu displays **3.13**, you are viewing documentation for all versions (including patch versions: 3.13.x) of the 3.13 release. 
 
