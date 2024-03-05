@@ -31,7 +31,7 @@ RabbitMQ as a message and streaming broker is used in many different environment
 
 ### Administrator
 
-For an administrator who wants to install RabbitMQ in a production environment, the following is the generic list of tasks they would follow to start using RabbitMQ.
+For an administrator who wants to use RabbitMQ in a production environment, the following is the generic list of tasks they would follow to start using RabbitMQ.
 
 <table id="administrator">
 
