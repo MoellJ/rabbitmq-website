@@ -25,6 +25,9 @@ For previous 3.12.x documentation, select the **3.12** option from the drop-down
 
 Use the navigation on the left to browse through documentation for your release of RabbitMQ.
 
+## Getting Started
+Choose which RabbitMQ version you want to use, review the [latest RabbitMQ releases](https://revamp-the-rabbitmq-home-pag.rabbitmq-website.pages.dev/docs/changelog) to help you decide. Next, go to the [Get Started pages](https://revamp-the-rabbitmq-home-pag.rabbitmq-website.pages.dev/tutorials) to try out the tutorials. These tutorials offer an introduction to messaging and it's key features as well as some common usage scenarios.
+
 ## The Personas that Use RabbitMQ
 
 RabbitMQ as a message and streaming broker is used in many different environments and by many different personas. The following are some of the personas currently using RabbitMQ. 
@@ -38,9 +41,16 @@ For an administrator who want to use RabbitMQ in a production environment, the f
     <th class="centre">Tasks</th>
     <th class="centre">Documentation Reference</th>
   </tr>
-
   <tr>
-    <td class="centre">Install and provision</td>
+    <td class="centre">Install and provision RabbitMQ on all Nodes in the Cluster</td>
+    <td class="centre">XXX</td>
+  </tr>
+  <tr>
+    <td class="centre">Configure the Hostnames</td>
+    <td class="centre">XXX</td>
+  </tr>
+  <tr>
+    <td class="centre">Configure High Availability (if required)</td>
     <td class="centre">XXX</td>
   </tr>
   <tr>
@@ -48,7 +58,7 @@ For an administrator who want to use RabbitMQ in a production environment, the f
     <td class="centre">XXX</td>
   </tr>
   <tr>
-    <td class="centre">Choose the appropriate queue to use (quorum queues, classic queues, or streams) and Configure these Queues</td>
+    <td class="centre">Choose the appropriate queue to use (quorum queues, classic queues, or streams) and configure these Queues</td>
     <td class="centre">XXX</td>
   </tr>
   <tr>
@@ -56,11 +66,11 @@ For an administrator who want to use RabbitMQ in a production environment, the f
     <td class="centre">XXX</td>
   </tr>
   <tr>
-    <td class="centre">Choose the appropriate Queue type to use and Configure the Queues</td>
+    <td class="centre">Choose the appropriate Queue type to use and configure the Queues</td>
     <td class="centre">XXX</td>
   </tr>
   <tr>
-    <td class="centre">Configure consumers for consuming messages and producers for Publishing these Messages</td>
+    <td class="centre">Configure consumers for consuming messages and producers for publishing these messages</td>
     <td class="centre">XXX</td>
   </tr>
    <tr>
@@ -113,11 +123,7 @@ For a developer who wants to use RabbitMQ in an application, the following is th
     <td class="centre"></td>
     <td class="centre">XXX</td>
   </tr>
-</table>
-
-## Getting Started 
-
-Check out what is in the latest RabbitMQ releases by accessing the [release information](https://revamp-the-rabbitmq-home-pag.rabbitmq-website.pages.dev/docs/changelog). Next, go to the [Get Started pages](https://revamp-the-rabbitmq-home-pag.rabbitmq-website.pages.dev/tutorials) to try out the tutorials. These tutorials offer an introduction to messaging and it's key features as well as some common usage scenarios. 
+</table> 
 
 BELOW IS THE EXISTING PAGE
 
