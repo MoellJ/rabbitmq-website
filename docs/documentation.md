@@ -27,64 +27,47 @@ Use the navigation on the left to browse through documentation for your release 
 
 ## The Personas that Use RabbitMQ
 
-RabbitMQ as a message and streaming broker is used in many different environments and by many different personas. The following are some of the personas currently using RabbitMQ 
+RabbitMQ as a message and streaming broker is used in many different environments and by many different personas. The following are some of the personas currently using RabbitMQ. 
 
 ### Administrator
 
 For an administrator who wants to install RabbitMQ in a production environment, the following is the generic list of tasks they would follow to start using RabbitMQ.
 
 <table id="administrator">
-  <!-- headers -->
 
   <tr>
     <th class="centre">Tasks</th>
     <th class="centre">Documentation Reference</th>
   </tr>
 
-  <!-- releases -->
+  <tr>
+    <td class="centre">A</td>
+    <td class="centre">XXX</td>
+  </tr>
+</table>
+  
+### Developer
+
+For a developer who wants to use RabbitMQ in an application, the following is the generic list of steps of they would follow to start using RabbitMQ.
+
+<table id="administrator">
+
+  <tr>
+    <th class="centre">Tasks</th>
+    <th class="centre">Documentation Reference</th>
+  </tr>
 
   <tr>
     <td class="centre">A</td>
     <td class="centre">XXX</td>
   </tr>
-
-  <tr>
-    <td class="centre">3.12.13</td>
-    <td class="centre">February 16 2024</td>
-    <td>
-      <ul>
-        <li>Bug fixes</li>
-      </ul>
-    </td>
-    <td class="centre">
-      <a href="https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.12.13">Release notes</a>
-    </td>
-  </tr>
-
-  <tr>
-    <td class="centre">3.12.12</td>
-    <td class="centre">January 9 2024</td>
-    <td>
-      <ul>
-        <li>Bug fixes</li>
-      </ul>
-    </td>
-    <td class="centre">
-      <a href="https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.12.12">Release notes</a>
-    </td>
-  </tr>
-
-
-
-### Developer
-
-For a developer who wants to use RabbitMQ in an application, the following is the generic list of steps of they would follow to start using RabbitMQ.
+</table>
 
 ## Getting Started 
 
 Check out what is in the latest RabbitMQ releases by accessing the [release information](https://revamp-the-rabbitmq-home-pag.rabbitmq-website.pages.dev/docs/changelog). Next, go to the [Get Started pages](https://revamp-the-rabbitmq-home-pag.rabbitmq-website.pages.dev/tutorials) to try out the tutorials. These tutorials offer an introduction to messaging and it's key features as well as some common usage scenarios. 
 
-BELOW IS THE EXISTING TOC
+BELOW IS THE EXISTING PAGE
 
 # Documentation: Table of Contents
 
