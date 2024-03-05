@@ -17,6 +17,31 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
+# RabbitMQ Documentation
+
+RabbitMQ is one of the most popular open source messaging and streaming brokers in the world today. It is easy to deploy on cloud environments, on-premises, and on your local machine. It is used by millions.
+
+## RabbitMQ Documentation is now versioned
+
+Welcome to the RabbitMQ documentation, which is now versioned. Use the drop-down menu at the top of each page to move between the documentation versions for each RabbitMQ release. By default, this drop-down menu displays documentation for the latest RabbitMQ release, which is currently 3.13. 
+
+If the drop-down menu displays **3.13**, you are viewing documentation for all versions (including patch versions: 3.13.x) of the 3.13 release. 
+
+Select the **3.12** option from the drop-down menu to access documentation for previous 3.12.x releases. 3.12.x documentation is hosted on our previous RabbitMQ site. This documentation is not versioned. 
+
+Over time, versioned documentation will be included on this site for a few of the most recent RabbitMQ releases. For now, because this new website is only recently launched, it just includes versioned documentation for the latest RabbitMQ release.
+
+## A New Table of Contents
+
+Access the table of contents on the left to navigate around documentation easier. You can also use the search function to find the information you need.
+
+Soon we will be revising the table of contents that you see now and also adding some navigational topics to help you move around the documentation even faster in the future. We will keep you posted!
+
+## Getting Started 
+
+Check out what is in the latest RabbitMQ releases by accessing the [release information](https://revamp-the-rabbitmq-home-pag.rabbitmq-website.pages.dev/docs/changelog). Next, go to the [Get Started pages](https://revamp-the-rabbitmq-home-pag.rabbitmq-website.pages.dev/tutorials) to try out the tutorials. These tutorials offer an introduction to messaging and it's key features as well as some common usage scenarios. 
+
+BELOW IS THE EXISTING TOC
 
 # Documentation: Table of Contents
 
