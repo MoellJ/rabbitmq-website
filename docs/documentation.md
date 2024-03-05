@@ -19,7 +19,7 @@ limitations under the License.
 -->
 # RabbitMQ Documentation
 
-Welcome to RabbitMQ documentation. Use the drop-down menu on the top right of any page to select the documentation version for the RabbitMQ release that you want. We update each version of documentation with the latest minor and patch information for that release.
+Welcome to RabbitMQ documentation. Use the drop-down menu on the top right of any page to select the documentation version for the RabbitMQ release that you are using. We update each version of documentation with the latest minor and patch information for that release.
 
 For previous 3.12.x documentation, select the **3.12** option from the drop-down menu. 3.12.x documentation is hosted on our previous RabbitMQ site. This documentation is not versioned. 
 
@@ -31,17 +31,60 @@ RabbitMQ as a message and streaming broker is used in many different environment
 
 ### Administrator
 
-For an administrator who wants to install RabbitMQ in a production environment, the following is the generic list of tasks they would follow to start using RabbitMQ.
+For an administrator who want to use RabbitMQ in a production environment, the following is the generic list of tasks they would follow to start using RabbitMQ.
 
 <table id="administrator">
-
-  <tr>
+   <tr>
     <th class="centre">Tasks</th>
     <th class="centre">Documentation Reference</th>
   </tr>
 
   <tr>
-    <td class="centre">A</td>
+    <td class="centre">Install and provision</td>
+    <td class="centre">XXX</td>
+  </tr>
+  <tr>
+    <td class="centre">Configure exchanges, routing, and bindings</td>
+    <td class="centre">XXX</td>
+  </tr>
+  <tr>
+    <td class="centre">Choose the appropriate queue to use (quorum queues, classic queues, or streams) and Configure these Queues</td>
+    <td class="centre">XXX</td>
+  </tr>
+  <tr>
+    <td class="centre">Install and configure additional plugins</td>
+    <td class="centre">XXX</td>
+  </tr>
+  <tr>
+    <td class="centre">Choose the appropriate Queue type to use and Configure the Queues</td>
+    <td class="centre">XXX</td>
+  </tr>
+  <tr>
+    <td class="centre">Configure consumers for consuming messages and producers for Publishing these Messages</td>
+    <td class="centre">XXX</td>
+  </tr>
+   <tr>
+    <td class="centre">Setup consumer acknowledgements and publisher confirms</td>
+    <td class="centre">XXX</td>
+  </tr>
+  <tr>
+    <td class="centre">Configure RabbitMQ</td>
+    <td class="centre">XXX</td>
+  </tr>
+  <tr>
+    <td class="centre">Setup authentication and authorization</td>
+    <td class="centre">XXX</td>
+  </tr>
+  <tr>
+    <td class="centre">Networking and TLS</td>
+    <td class="centre">XXX</td>
+  </tr>
+  <tr>
+    <td class="centre">Monitoring</td>
+    <td class="centre">XXX</td>
+  </tr>
+  <tr>
+    <td class="centre">Logging</td>
     <td class="centre">XXX</td>
   </tr>
 </table>
@@ -51,14 +94,23 @@ For an administrator who wants to install RabbitMQ in a production environment, 
 For a developer who wants to use RabbitMQ in an application, the following is the generic list of steps of they would follow to start using RabbitMQ.
 
 <table id="administrator">
-
   <tr>
-    <th class="centre">Tasks</th>
+    <th class="centre">Task</th>
     <th class="centre">Documentation Reference</th>
   </tr>
 
   <tr>
-    <td class="centre">A</td>
+    <td class="centre"></td>
+    <td class="centre">XXX</td>
+  </tr>
+
+  <tr>
+    <td class="centre"></td>
+    <td class="centre">XXX</td>
+  </tr>
+
+  <tr>
+    <td class="centre"></td>
     <td class="centre">XXX</td>
   </tr>
 </table>
