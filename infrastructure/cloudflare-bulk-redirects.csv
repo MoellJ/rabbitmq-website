@@ -293,7 +293,7 @@ www.rabbitmq.com/previous.html,https://www.rabbitmq.com/docs/previous,,TRUE,FALS
 www.rabbitmq.com/priority.html,https://www.rabbitmq.com/docs/priority,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/production-checklist.html,https://www.rabbitmq.com/docs/production-checklist,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/prometheus.html,https://www.rabbitmq.com/docs/prometheus,,TRUE,FALSE,FALSE,FALSE
-www.rabbitmq.com/protocol.html,https://www.rabbitmq.com/docs/protocol,,TRUE,FALSE,FALSE,FALSE
+www.rabbitmq.com/protocol.html,https://www.rabbitmq.com/amqp-0-9-1-protocol,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/protocols.html,https://www.rabbitmq.com/docs/protocols,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/publishers.html,https://www.rabbitmq.com/docs/publishers,,TRUE,FALSE,FALSE,FALSE
 www.rabbitmq.com/queues.html,https://www.rabbitmq.com/docs/queues,,TRUE,FALSE,FALSE,FALSE
