@@ -20,3 +20,17 @@ limitations under the License.
 
 # Release Information
 
+The RabbitMQ project maintains release branches for the three most recent minor releases (3.13, 3.12, and 3.11). Review the [Release Series](https://www.rabbitmq.com/docs/versions) for details about what support (community or extended commercial support policies) is provided for these releases.
+
+ A full list of all RabbitMQ releases as well as links to the their associated release notes is available from the [change log](https://www.rabbitmq.com/docs/changelog). 
+
+ You may also find [RabbitMQ project announcements](https://www.rabbitmq.com/docs/news) useful.  
+
+
+
+
+
+
+
+
+
