@@ -203,7 +203,7 @@ const config = {
               },
               {
                 label: 'Contact us',
-                to: '/docs/contact',
+                to: '/contact',
               },
             ],
           },
