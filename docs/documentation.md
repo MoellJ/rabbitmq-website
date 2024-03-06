@@ -28,11 +28,33 @@ Use the navigation on the left to browse through documentation for your release 
 ## Getting Started
 Choose which RabbitMQ version you want to use, review the [latest RabbitMQ releases](https://revamp-the-rabbitmq-home-pag.rabbitmq-website.pages.dev/docs/changelog) to help you decide. Next, go to the [Get Started pages](https://revamp-the-rabbitmq-home-pag.rabbitmq-website.pages.dev/tutorials) to try out the tutorials. These tutorials offer an introduction to messaging and it's key features as well as some common usage scenarios.
 
-## The Personas that Use RabbitMQ
+## User: Developer
 
-RabbitMQ as a message and streaming broker is used in many different environments and by many different personas. The following are some of the personas currently using RabbitMQ. 
+For a developer who wants to use RabbitMQ in an application, the following is the generic list of steps of they would follow to start using RabbitMQ.
 
-### Administrator
+<table id="developer">
+  <tr>
+    <th class="centre">Task</th>
+    <th class="centre">Documentation Reference</th>
+  </tr>
+
+  <tr>
+    <td class="centre"></td>
+    <td class="centre">XXX</td>
+  </tr>
+
+  <tr>
+    <td class="centre"></td>
+    <td class="centre">XXX</td>
+  </tr>
+
+  <tr>
+    <td class="centre"></td>
+    <td class="centre">XXX</td>
+  </tr>
+</table> 
+
+## User: Administrator
 
 For an administrator who want to use RabbitMQ in a production environment, the following is the generic list of tasks they would follow to start using RabbitMQ.
 
@@ -98,32 +120,6 @@ For an administrator who want to use RabbitMQ in a production environment, the f
     <td class="centre">XXX</td>
   </tr>
 </table>
-  
-### Developer
-
-For a developer who wants to use RabbitMQ in an application, the following is the generic list of steps of they would follow to start using RabbitMQ.
-
-<table id="administrator">
-  <tr>
-    <th class="centre">Task</th>
-    <th class="centre">Documentation Reference</th>
-  </tr>
-
-  <tr>
-    <td class="centre"></td>
-    <td class="centre">XXX</td>
-  </tr>
-
-  <tr>
-    <td class="centre"></td>
-    <td class="centre">XXX</td>
-  </tr>
-
-  <tr>
-    <td class="centre"></td>
-    <td class="centre">XXX</td>
-  </tr>
-</table> 
 
 BELOW IS THE EXISTING PAGE
 
